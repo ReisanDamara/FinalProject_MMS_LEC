@@ -22,6 +22,9 @@ class HomeViewController: UIViewController {
     @IBAction func btnLogout(_ sender: Any) {
         performSegue(withIdentifier: "logout", sender: self)
     }
+    
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+    }
     /*
     // MARK: - Navigation
 

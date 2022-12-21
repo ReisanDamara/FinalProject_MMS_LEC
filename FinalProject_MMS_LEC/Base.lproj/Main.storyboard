@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XTg-GJ-0jc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mSM-21-ceC">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LogIn-->
+        <!--Item-->
         <scene sceneID="Elw-8w-qoA">
             <objects>
                 <viewController id="15N-QW-deL" customClass="ViewController" customModule="FinalProject_MMS_LEC" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,19 +37,28 @@
                                     <action selector="btnLogin:" destination="15N-QW-deL" eventType="touchUpInside" id="vmg-GG-tPb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFt-Zp-kGY">
+                                <rect key="frame" x="155" y="641" width="102" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="REGISTER"/>
+                                <connections>
+                                    <segue destination="2kz-y5-KwN" kind="show" id="WVR-Fe-sPU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0JD-uA-cSF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="LogIn" id="s9V-Wk-2Vz"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="coj-sr-clH"/>
                     <navigationItem key="navigationItem" id="Rrm-4P-Vnk"/>
                     <connections>
-                        <segue destination="wWB-4H-th2" kind="presentation" identifier="toHome" modalPresentationStyle="fullScreen" id="TZE-uo-Nti"/>
+                        <segue destination="wzy-md-z4z" kind="show" identifier="toHome" id="wM7-Np-ZKH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kH-rN-ffF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3074" y="615"/>
+            <point key="canvasLocation" x="4902" y="627"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="T89-dZ-EA4">
@@ -125,15 +134,16 @@
                         <viewLayoutGuide key="safeArea" id="Y0x-Rn-Ls5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wG7-mG-2Bh"/>
+                    <navigationItem key="navigationItem" id="zOd-U9-7ej"/>
                     <connections>
                         <segue destination="ThU-8i-lUf" kind="show" identifier="toMenu" id="Yds-pn-KFK"/>
-                        <segue destination="XTg-GJ-0jc" kind="show" identifier="logout" id="aMk-lx-DIW"/>
+                        <segue destination="0fg-4T-Bsg" kind="unwind" identifier="logout" unwindAction="unwindToLogin:" id="Yrx-vp-Drd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Q4-yC-N2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0fg-4T-Bsg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5514" y="632"/>
+            <point key="canvasLocation" x="6614.5038167938928" y="614.78873239436621"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="FiK-Et-K9b">
@@ -181,7 +191,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5f-AQ-OUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6411" y="632"/>
+            <point key="canvasLocation" x="7507.6335877862593" y="614.78873239436621"/>
         </scene>
         <!--REGISTER-->
         <scene sceneID="OMt-1b-L5A">
@@ -225,55 +235,34 @@
                     <tabBarItem key="tabBarItem" title="REGISTER" id="1gS-hp-cP5"/>
                     <navigationItem key="navigationItem" id="epc-rz-TGh"/>
                     <connections>
-                        <segue destination="XTg-GJ-0jc" kind="presentation" identifier="backToLogin" modalPresentationStyle="fullScreen" id="t3C-2e-ghY"/>
+                        <segue destination="EC3-Nc-eCK" kind="unwind" identifier="backToLogin" unwindAction="unwindToLogin:" id="IzR-IZ-hxn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXr-Bp-RlN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="EC3-Nc-eCK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3073" y="-121"/>
+            <point key="canvasLocation" x="4892" y="-45"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="CiX-4g-FEN">
+        <!--Item-->
+        <scene sceneID="Z2I-CJ-daF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XTg-GJ-0jc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSM-21-ceC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vfa-Hj-UWH"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="nen-F6-usB"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yzB-6B-OMr">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="15N-QW-deL" kind="relationship" relationship="viewControllers" id="HC5-7M-4An"/>
-                        <segue destination="2kz-y5-KwN" kind="relationship" relationship="viewControllers" id="XZj-jB-dar"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wbp-8q-1ig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1466.4122137404579" y="374.64788732394368"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gsy-74-WYq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wWB-4H-th2" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="fn5-oZ-xm8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Pn-Gb-93f">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k3Y-h5-i5d">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="wzy-md-z4z" kind="relationship" relationship="rootViewController" id="2FP-4B-REL"/>
+                        <segue destination="15N-QW-deL" kind="relationship" relationship="rootViewController" id="nww-5s-w1P"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UFn-wd-PlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0h-xv-6Yc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4573" y="633"/>
+            <point key="canvasLocation" x="4155" y="577"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="t3C-2e-ghY"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

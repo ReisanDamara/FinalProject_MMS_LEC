@@ -18,5 +18,9 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "toHome", sender: self)
     }
     
+    @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
 }
 
