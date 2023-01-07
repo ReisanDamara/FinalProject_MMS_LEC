@@ -15,7 +15,9 @@
 		05B16BCB2952CDBE00CDF88B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05B16BC92952CDBE00CDF88B /* LaunchScreen.storyboard */; };
 		05B16BD32952E11D00CDF88B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B16BD22952E11D00CDF88B /* RegisterViewController.swift */; };
 		05B16BD52952E13C00CDF88B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B16BD42952E13C00CDF88B /* HomeViewController.swift */; };
-		05B16BD92952E18B00CDF88B /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B16BD82952E18B00CDF88B /* MenuTableViewController.swift */; };
+		05D79C2029694C50002CF2CB /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D79C1F29694C50002CF2CB /* Menu.swift */; };
+		05D79C2229694DF4002CF2CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D79C2129694DF4002CF2CB /* MenuViewController.swift */; };
+		05D79C2429694E06002CF2CB /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D79C2329694E06002CF2CB /* MenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		05B16BCC2952CDBE00CDF88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B16BD22952E11D00CDF88B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		05B16BD42952E13C00CDF88B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		05B16BD82952E18B00CDF88B /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		05D79C1F29694C50002CF2CB /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		05D79C2129694DF4002CF2CB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		05D79C2329694E06002CF2CB /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +70,14 @@
 				05B16BC02952CDBD00CDF88B /* SceneDelegate.swift */,
 				05B16BC22952CDBD00CDF88B /* ViewController.swift */,
 				05B16BC42952CDBD00CDF88B /* Main.storyboard */,
+				05D79C2129694DF4002CF2CB /* MenuViewController.swift */,
+				05D79C2329694E06002CF2CB /* MenuTableViewCell.swift */,
 				05B16BC72952CDBE00CDF88B /* Assets.xcassets */,
 				05B16BC92952CDBE00CDF88B /* LaunchScreen.storyboard */,
-				05B16BD82952E18B00CDF88B /* MenuTableViewController.swift */,
 				05B16BD22952E11D00CDF88B /* RegisterViewController.swift */,
 				05B16BD42952E13C00CDF88B /* HomeViewController.swift */,
 				05B16BCC2952CDBE00CDF88B /* Info.plist */,
+				05D79C1F29694C50002CF2CB /* Menu.swift */,
 			);
 			path = FinalProject_MMS_LEC;
 			sourceTree = "<group>";
@@ -149,7 +155,9 @@
 			files = (
 				05B16BD52952E13C00CDF88B /* HomeViewController.swift in Sources */,
 				05B16BC32952CDBD00CDF88B /* ViewController.swift in Sources */,
-				05B16BD92952E18B00CDF88B /* MenuTableViewController.swift in Sources */,
+				05D79C2429694E06002CF2CB /* MenuTableViewCell.swift in Sources */,
+				05D79C2029694C50002CF2CB /* Menu.swift in Sources */,
+				05D79C2229694DF4002CF2CB /* MenuViewController.swift in Sources */,
 				05B16BBF2952CDBD00CDF88B /* AppDelegate.swift in Sources */,
 				05B16BC12952CDBD00CDF88B /* SceneDelegate.swift in Sources */,
 				05B16BD32952E11D00CDF88B /* RegisterViewController.swift in Sources */,
@@ -306,6 +314,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +342,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

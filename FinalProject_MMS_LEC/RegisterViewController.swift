@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController {
     
 
     @IBAction func btnRegis(_ sender: Any) {
-        performSegue(withIdentifier: "backToLogin", sender: self)
+        self.tabBarController?.selectedIndex = 0
     }
     
    
